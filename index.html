@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Footwear Fusion - this name suggests a blend of different shoe styles, brands, and trends, creating a unique and diverse collection."/>
+    <title>Footwear Fusion - Stand out and elevate your style</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+<section class="section header">
+    <div class="container header">
+        <header id="header">
+            <div class="logotype" onclick="redirectToPage('index.html')">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Footwear Fusion">
+                </div>
+                <h3>Footwear Fusion</h3>
+            </div>
+            <div class="contact-info">
+
+                <div class="contact-info-item">
+                    <a title="Matai Mansion, St John Baptist Rd,Mount Mary, Bandra West, Mumbai, Maharashtra"
+                       class="icon-link"
+                       href="https://maps.app.goo.gl/dkD8eNdCLoBzXZQY8" target="_blank">
+                        <img class="icons-info" src="img/icons/icon_location.png" alt="shoes location">
+                    </a>
+                </div>
+
+                <div class="contact-info-item">
+                    <a title="+91 (22) 1234-5678" class="icon-link"
+                       href="tel:+912212345678" data-scroll="#header">
+                        <img class="icons-info" src="img/icons/icon_mobile.png" alt="shoes location">
+                    </a>
+                </div>
+
+                <div class="contact-info-item">
+                    <a title="footwearfusion@gmail.com"
+                       class="icon-link"
+                       href="mailto:footwearfusion@gmail.com"
+                       data-scroll="#header"><span style="display: none">footwearfusion@gmail.com</span>
+                        <img class="icons-info" src="img/icons/icon_email.png" alt="shoes location">
+                    </a>
+                </div>
+
+                <button class="call-back-button" id="call-back-btn">Contact Us</button>
+
+            </div>
+        </header>
+
+
+    </div>
+
+    <div class="container header">
+        <nav>
+            <div class="menu-toggle">
+                <button id="menu-btn">&#9776; Menu</button> <!-- Иконка гамбургера для открытия меню -->
+            </div>
+            <ul id="home" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</section>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <form class="callback-form" action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="checkbox">
+                <input id="privacy" name="privacy" value="on" type="checkbox" required>
+                <label for="privacy"><span class="checkbox_text">I accept <a
+                        href="privacy-policy.html"> Privacy policy </a></span></label>
+            </div>
+            <button style="margin-top: 10px" class="call-back-button" type="submit" name="form_name" value="form1">Submit</button>
+        </form>
+    </div>
+</div>
+
+<main>
+
+    <section class="section banner">
+        <div class="container">
+
+            <div class="intro_inner">
+
+                <div class="slider_container">
+
+                    <div class="slider men">
+                        <div class="intro_inner banner">
+                            <h1 class="intro_subtitle banner">Style and comfort for men</h1>
+                            <h2>Find your perfect pair of men's shoes</h2>
+                            <h2>Join us in the world of men's fashion for feet</h2>
+                            <button class="call-back-button" onclick="redirectToPage('men.html')">More Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="slider women">
+                        <div class="intro_inner banner">
+                            <h2 class="intro_subtitle banner">Update your shoe collection</h2>
+                            <h2>Find your next favorite pair of women's shoes</h2>
+                            <h2>Combine style and comfort in women's shoes</h2>
+                            <button class="call-back-button" onclick="redirectToPage('women.html')">More Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="slider kids">
+                        <div class="intro_inner banner">
+                            <h2 class="intro_subtitle banner">Find the perfect shoes for little feet</h2>
+                            <h2>Help children start their journey in the world of fashion</h2>
+                            <h2>Style and comfort for little fashionistas</h2>
+                            <button class="call-back-button" onclick="redirectToPage('kids.html')">More Details
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="controls">
+                    <button id="prevButton">&#10232; Previous</button>
+                    <hr>
+                    <button id="nextButton">Next &#10233;</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="section gallery">
+        <div class="container">
+
+            <div class="intro_inner gallery">
+
+                <h2 class="intro_subtitle"> Engage with Our Team for Success</h2>
+                <hr class="liner">
+                <div class="intro_description">
+                    <h2>Our footwear selection offers a wide variety of men's, women's, and children's shoes from
+                        leading brands and designers. We strive to provide fashionable and comfortable options for every
+                        style and need. From classic pumps to sporty sneakers, we have it all to help you build the
+                        perfect shoe collection. Our experts are always ready to assist you in finding the right size
+                        and style, so you can feel confident and stylish in any shoe. Visit our footwear selection today
+                        and update your shoe collection!
+                    </h2>
+                </div>
+
+                <div class="gallery_container">
+
+                    <div class="photo_items">
+                        <div class="gallery_item">
+                            <img src="img/gallery_men.png" alt="shoes">
+                            <button class="call-back-button gallery" onclick="redirectToPage('men.html')">for men
+                            </button>
+                        </div>
+                        <span></span>
+                    </div>
+
+                    <div class="photo_items">
+                        <div class="gallery_item">
+                            <img src="img/gallery_women.png" alt="shoes">
+                            <button class="call-back-button gallery" onclick="redirectToPage('women.html')">for women
+                            </button>
+                        </div>
+                        <span></span>
+                    </div>
+
+                    <div class="photo_items">
+                        <div class="gallery_item">
+                            <img src="img/gallery_kids.png" alt="shoes">
+                            <button class="call-back-button gallery" onclick="redirectToPage('kids.html')">for Kids
+                            </button>
+                        </div>
+                        <span></span>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="intro_inner">
+
+                <h2 class="intro_subtitle">Footwear Fusion </h2>
+                <hr class="liner">
+                <h2 class="intro_title">Your Ultimate Shoe Destination</h2>
+
+                <div class="intro_description">
+                    <h3>At Footwear Fusion, we understand that choosing the right shoes is important for both style and
+                        comfort. That's why we offer a wide variety of high-quality shoes for men, women, and children
+                        from leading brands and designers. Our team of experts is dedicated to helping you find the
+                        perfect pair of shoes for any occasion.
+                        We pride ourselves on our exceptional customer service, offering personalized assistance and
+                        expert advice to help you make the right choice. Our knowledgeable staff is always available to
+                        answer any questions you may have, and we offer a range of services to ensure a seamless
+                        shopping experience, including free shipping and returns, easy exchanges, and more.
+                        Our commitment to quality and style is evident in every pair of shoes we sell. We carefully
+                        curate our selection to include only the best brands and designs, ensuring that you have access
+                        to the latest trends and timeless classics. From casual sneakers to formal dress shoes, we have
+                        something for everyone.
+                        At Footwear Fusion, we believe that shoes are more than just a functional item - they're a way
+                        to express your personal style and enhance your confidence. That's why we're dedicated to
+                        providing you with the best selection, service, and value in the industry. Join the Footwear
+                        Fusion family today and discover why so many people choose us for their shoe needs.
+                    </h3>
+                </div>
+
+                <div class="creme">
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/icons/diverse.png" alt="Diverse Selection"/>
+                        <div class="services_text_block">
+                            <div class="services_title">Diverse Selection.</div>
+                            <div class="services_text">We offer a wide range of men's, women's, and children's shoes
+                                from top brands and designers.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/icons/quality.png" alt="Quality Assurance."/>
+                        <div class="services_text_block">
+                            <div class="services_title">Quality Assurance.</div>
+                            <div class="services_text">Each shoe is carefully selected for its quality and comfort,
+                                ensuring you get the best.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/icons/customer_support.png" alt="Customer Support"/>
+                        <div class="services_text_block">
+                            <div class="services_title">Customer Support.</div>
+                            <div class="services_text">Our dedicated customer service team is always ready to assist you
+                                with any questions or concerns.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/icons/value.png" alt="Value"/>
+                        <div class="services_text_block">
+                            <div class="services_title">Value.</div>
+                            <div class="services_text">We strive to offer competitive prices on all our footwear, giving
+                                you the best value for your money.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/icons/convenience11.png" alt="Convenience"/>
+                        <div class="services_text_block">
+                            <div class="services_title">Convenience.</div>
+                            <div class="services_text">Enjoy convenient shipping and hassle-free returns to make your
+                                shoe shopping experience seamless.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/icons/experience.png" alt="Experience"/>
+                        <div class="services_text_block">
+                            <div class="services_title">Experience.</div>
+                            <div class="services_text">With our rich industry experience, we take pride in being a
+                                trusted destination for quality footwear.
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="intro_description">Choose Footwear Fusion for your next shoe purchase and experience our
+                        exceptional service and quality!</h4>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+
+        <div class="container">
+            <div class="clients">
+
+
+                <div class="intro_inner">
+
+                    <h2 class="intro_subtitle">Footwear Fusion </h2>
+                    <hr class="liner">
+                    <h2 class="intro_title">Your Ultimate Shoe Destination</h2>
+                </div>
+
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">David M.</div>
+                        <div class="clients_text">
+                            Footwear Fusion exceeded my expectations! The quality of the shoes I purchased was
+                            outstanding, and the customer service was exceptional. I highly recommend this store to
+                            anyone looking for stylish and comfortable footwear. Thank you, Footwear Fusion!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client1.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">Jessica R.</div>
+                        <div class="clients_text ">
+                            I've never been one to leave reviews, but Footwear Fusion deserves all the praise. The
+                            variety of shoes available is impressive, and the shopping experience was seamless. I found
+                            the perfect pair of boots that I've been searching for everywhere. Thank you, Footwear
+                            Fusion, for making shoe shopping so enjoyable!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client5.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">Mark W.</div>
+                        <div class="clients_text ">
+                            Footwear Fusion is my new favorite shoe store! The range of sizes they offer is fantastic,
+                            and I finally found shoes that fit perfectly. The delivery was quick, and the shoes were
+                            exactly as described. I'll definitely be a returning customer. Thanks, Footwear Fusion!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client9.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">Samantha K.</div>
+                        <div class="clients_text ">
+                            I can't say enough good things about Footwear Fusion. The shoes I ordered arrived promptly,
+                            and they were even better in person than online. The attention to detail and customer care
+                            is evident in every aspect of their service. I'm thrilled with my purchase. Thank you,
+                            Footwear Fusion!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client8.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">Alex B.</div>
+                        <div class="clients_text ">
+                            Footwear Fusion is a gem of a store! The shoes are of excellent quality, and the prices are
+                            reasonable. I recently bought a pair of sneakers for my daughter, and she loves them. The
+                            whole shopping experience was delightful. I'll definitely be back for more. Thank you,
+                            Footwear Fusion!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client7.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">John D.</div>
+                        <div class="clients_text ">
+                            "I was hesitant to buy shoes online, but Footwear Fusion made the process so easy and
+                            stress-free. The shoes arrived quickly, and they fit perfectly. I'm already planning my next
+                            purchase! Thanks, Footwear Fusion!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client11.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">Emily T.</div>
+                        <div class="clients_text ">
+                            As a busy mom, I don't have a lot of time to shop for shoes. But Footwear Fusion makes it so
+                            easy to find what I need. The website is easy to navigate, and the customer service is
+                            top-notch. I recently bought a pair of sneakers for my son, and he loves them! Thanks,
+                            Footwear Fusion!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clients_item">
+                    <img class="clients_photo" src="img/clients/client3.jpeg" alt="client"/>
+                    <div class="clients_content">
+                        <div class="clients_name">Rachel S.</div>
+                        <div id="contact" class="clients_text ">
+                            I've been looking for the perfect pair of dress shoes for months, and I finally found them
+                            at Footwear Fusion. The quality is amazing, and they fit perfectly. I'm so glad I found this
+                            store! Thanks, Footwear Fusion!"
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+
+        <section class="section contact">
+
+            <div class="container">
+                <div class="intro_inner">
+
+                    <h2 class="intro_subtitle"> Engage with Our Team for Success</h2>
+                    <div class="intro_description">
+                        <h3>We're here to help you with all your footwear needs. Contact us and let us know how we can
+                            assist
+                            you.
+                            At Footwear Fusion, we're committed to providing exceptional customer service. Reach out to
+                            us with
+                            any questions or concerns.
+                            Our team of footwear experts is always available to help you find the perfect pair of shoes.
+                            Contact
+                            us today to learn more.
+                        </h3>
+
+
+                    </div>
+
+                    <div class="contact_block_items">
+
+                        <div class="contact-item left">
+                            <h4>At Footwear Fusion, we believe in building strong relationships with our customers.
+                                Contact
+                                us today and let us know how we can help you.</h4>
+
+                            <p>Address:<br>
+                                Matai Mansion, St John Baptist Rd,<br>
+                                Mount Mary, Bandra West<br>
+                                Mumbai, Maharashtra 400050,<br>
+                                India<br>
+                            </p>
+
+                            <div class="contact-info-item ">
+                                <a title="123 Fashion Street, Bandra West,Mumbai, Maharashtra"
+                                   class="icon-link contact"
+                                   href="https://maps.app.goo.gl/dkD8eNdCLoBzXZQY8" target="_blank">
+                                    <img class="icons-info" src="img/icons/icon_location.png" alt="shoes location">
+                                    look to map
+                                </a>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <a title="+91 (22) 1234-5678" class="icon-link contact"
+                                   href="tel:+912212345678" data-scroll="#header">
+                                    <img class="icons-info" src="img/icons/icon_mobile.png" alt="shoes location">
+                                    +91 (22) 1234-5678
+                                </a>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <a title="footwearfusion@gmail.com"
+                                   class="icon-link contact"
+                                   href="mailto:footwearfusion@gmail.com"
+                                   data-scroll="#header">
+                                    <span style="display: none">footwearfusion@gmail.com</span>
+                                    <img class="icons-info" src="img/icons/icon_email.png" alt="shoes location">
+                                    footwearfusion@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="contact-item right">
+                            <h4>Whether you need assistance with sizing, styling, or anything in between, we're here to
+                                help.</h4>
+                            <h4>Fill out the form below to connect with us. We're here to assist you in finding the
+                                perfect
+                                pair of shoes and making your footwear shopping experience exceptional.</h4>
+
+
+                            <form class="callback-form contact" action="submit_form.php" method="post">
+                                <label for="name_contact">Name:</label>
+                                <input type="text" id="name_contact" name="name_contact" required>
+                                <label for="email_contact">Email:</label>
+                                <input type="email" id="email_contact" name="email_contact" required>
+                                <label for="message_contact">Message:</label>
+                                <textarea id="message_contact" name="message_contact" required></textarea>
+                                <div class="checkbox">
+                                    <input id="privacy1" name="privacy" value="on" type="checkbox" required>
+                                    <label for="privacy1"><span class="checkbox_text">I accept <a
+                                            href="privacy-policy.html"> Privacy policy </a></span></label>
+                                </div>
+                                <button class="call-back-button contact" type="submit" name="form_name" value="form2">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="intro_title">
+                        Whether you're a long-time customer or new to Footwear Fusion, we're here to help. Contact us
+                        today
+                        and let us know how we can assist you.
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <div class="intro_title footer">&copy; 2024 Footwear Fusion. All Rights Reserved. <a href="terms.html">Terms and Conditions</a> </div>
+    </footer>
+
+
+    <div title="back to top" id="scroll-to-top-btn">&#8593;</div> <!-- Кнопка "вверх" -->
+</main>
+
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
